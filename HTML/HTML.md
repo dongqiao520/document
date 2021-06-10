@@ -117,7 +117,7 @@ html的注释语法如下，可在VScode编辑器中说那个ctrl+/键输入
 
 #### 开发流程
 
-![image-20210602232211153](E:\董巧\document\HTML\HTML.assets\image-20210602232211153.png)
+![image-20210602232211153](https://xiaodingyang-1300707163.cos.ap-chengdu.myqcloud.com/Markdown/image-20210602232211153.png)
 
 #### 项目起步
 
@@ -154,7 +154,7 @@ html的注释语法如下，可在VScode编辑器中说那个ctrl+/键输入
 </ul>
 ```
 
-**`<ul>`标签的子标签只能是`<li>`标签。**比如：![image-20210606140111511](E:\董巧\document\HTML\HTML.assets\image-20210606140111511.png)
+**`<ul>`标签的子标签只能是`<li>`标签。**比如：![image-20210606140111511](https://xiaodingyang-1300707163.cos.ap-chengdu.myqcloud.com/Markdown/image-20210606140111511.png)
 
 `<li>`标签是容器，内部可以放任何标签如：
 
@@ -261,7 +261,7 @@ reversed属性不需要值，只需要书写reversed单词即可，这是HTML的
 
 
 
-![image-20210607221340489](E:\董巧\document\HTML\HTML.assets\image-20210607221340489.png)
+![image-20210607221340489](https://xiaodingyang-1300707163.cos.ap-chengdu.myqcloud.com/Markdown/image-20210607221340489.png)
 
 哪里应该使用定义列表：
 
@@ -269,7 +269,7 @@ reversed属性不需要值，只需要书写reversed单词即可，这是HTML的
 
 2、只要语义上有“解释说明”含义的文字，且为列表形态，应该使用定义列表、如
 
-![image-20210607221846535](E:\董巧\document\HTML\HTML.assets\image-20210607221846535.png)
+![image-20210607221846535](https://xiaodingyang-1300707163.cos.ap-chengdu.myqcloud.com/Markdown/image-20210607221846535.png)
 
 
 
