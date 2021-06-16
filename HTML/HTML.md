@@ -347,9 +347,73 @@ width、height属性分别设置宽度和高度，单位是像素，但是不需
 
 ##### 2超链接标签
 
-#### 音频和视频
+超级链接是讲网页和网页链接到一起的方法，是互联网成“网”的原因。
 
-##### 1音频和视频
+使用**`<a>`**标签制作超级链接
+
+```
+<a hrdf="2.html">去第二个网页</a>
+```
+
+![image-20210616210516345](https://xiaodingyang-1300707163.cos.ap-chengdu.myqcloud.com/Markdown/image-20210616210516345.png)
+
+href属性支持相对路径和绝对路径
+
+```html
+<a href="web/2.html">去第二个网页</a>
+<a href="../web/2.html">去第二个网页</a>
+<a herf="http:www.immoc.com">去慕课</a>
+```
+
+**<a>标签的title属性**
+
+<a>标签的title属性用于设置鼠标的悬停文本
+
+```html
+<a href="2.html" title="很好看哦~">去第二个网页</a>
+```
+
+![image-20210616215749820](https://xiaodingyang-1300707163.cos.ap-chengdu.myqcloud.com/Markdown/image-20210616215749820.png)
+
+**在新窗口中打开我网页**
+
+将`<a>`标签的target属性设置为blank,即可在新标签中打开网页
+
+```html
+<a href="2.html" target="blank">去第二个</a>
+```
+
+**给图片设置超级链接**
+
+图片也可以设置超级链接，只需要用`<a>`标签包裹住img标签即可
+
+```html
+<a href="2.html" targrt="blank">
+  <img src="images/goblin.png">
+</a>
+```
+
+**页面内锚点**
+
+1较长的页面，可以适当的给h标签添加id属性，他将成为页面的锚点
+
+```html
+<h1 id="wuxi">无锡美景</h1>
+```
+
+2当网页后添加#时，页面将自动滚到锚点所在位置
+
+其他页面的超级链接，可以链接到指定锚点
+
+```html
+<a href="1vyou.html#wuxi>看无锡美景</a>
+```
+
+
+
+音频和视频
+
+### 1音频和视频
 
 1大纲标签
 2语义化标签
