@@ -409,14 +409,161 @@ href属性支持相对路径和绝对路径
 <a href="1vyou.html#wuxi>看无锡美景</a>
 ```
 
+下载链接
+
+指向exe、zip、rar等文件格式的链接，将自动成为下载链接
+
+```html
+<a href="1.zip">下载</a>
+```
+
+邮件链接、电话链接
+
+有mailto:前缀的链接是邮件链接，系统将自动打开Email相关软件
+
+```html
+<a href="mailto:me@test.com">给小编发邮件</a>
+```
+
+有tel：前缀的链接是电话链接，系统将自动打开拨号盘
+
+```html
+<a href="tel:12306">打电话买火车票</a>
+```
+
+### 音频和视频
+
+#### 1音频
+
+在浏览器中插入音频需要使用`<audio>`标签，兼容到IE9
+
+![image-20210619153344106](https://xiaodingyang-1300707163.cos.ap-chengdu.myqcloud.com/Markdown/image-20210619153344106.png)
+
+**常用的音频格式**是mp3和ogg格式
+
+**autoplay属性和loop属性**
+
+`<audio>`标签的**autoplay属性**，音频会自动播放
+
+`<audio>`标签的**loop属性**，音频会循环播放
+
+```html
+<audio src="音频地址" controls autoplay loop>
+	请升级浏览器
+</audio>
+<!--以上表示打开网页音频会自动循环播放-->
+```
+
+#### 2视频
+
+在浏览器中插入视频需要使用`<video>`标签，兼容到IE9
+
+![image-20210619154714620](https://xiaodingyang-1300707163.cos.ap-chengdu.myqcloud.com/Markdown/image-20210619154714620.png)
+
+**常用的音频格式**是mp4、ogv和webm等格式
+
+```html
+<vidio controls src="视频地址" loop autopplay width=“300”></vidio>
+<!--以上表示打开网页会自动循环播放宽度为300mm的视频-->
+```
+
+### 1区块标签
+
+div标签实现文档区块分隔
+
+![image-20210619155711864](https://xiaodingyang-1300707163.cos.ap-chengdu.myqcloud.com/Markdown/image-20210619155711864.png)
+
+HTML5退出来众多新的区块标签
+
+| 区块标签 | 说明                                 |
+| -------- | ------------------------------------ |
+| section  | 文档的区域，语义比div大              |
+| article  | 文档的核心内容，会被搜索引擎主要抓取 |
+| aside    | 文档的非必要相关内容，比如广告等     |
+| nav      | 导航条                               |
+| header   | 页头                                 |
+| main     | 网页核心部分                         |
+| footer   | 页脚                                 |
+
+### 2语义化标签
+
+##### **`<span>`标签**
+
+`<span>`标签 是文本中的区块标签，本身没有特殊的显示效果，可以结合css来丰富样式
+
+`<b>`、`<u>`、`<i>`标签
+
+`<b>`、`<u>`、`<i>`标签充满浓浓的“样式“意味，已经被css替代，但是在网页中也可以表示需要强调的文本
+
+| 标签 | 说明                                  |
+| ---- | ------------------------------------- |
+| <b>  | 被加粗的文字，css已经代替了他的功能   |
+| <u>  | 加下划线的文字，css已经代替了他的功能 |
+| <i>  | 倾斜的文字，css已经代替了他的功能     |
+
+```html
+<p>   
+	<b>幕课网</b>
+    <u>慕课网</u>
+    <i>慕课网</i>
+</p>
+<!--显示效果如下图片-->
+```
+
+![image-20210619163046167](https://xiaodingyang-1300707163.cos.ap-chengdu.myqcloud.com/Markdown/image-20210619163046167.png)
+
+##### `<strong>、<em>、<mark>`标签
+
+`<strong>、<em>、<mark>`标签均表示**强调语义**
+
+| 标签     | 说明                     |
+| -------- | ------------------------ |
+| <strong> | 代表特别重要的文字       |
+| <em>     | 代表强调语义             |
+| <mark>   | 代表一段需要被高亮的文字 |
+
+```heml
+  <p>
+       我<strong>一定</strong>好好学习
+   </p> 
+   <p>
+       我<em>一定</em>好好学习
+   </p>
+   <p>
+       我<mark>一定</mark>好好学习
+   </p>
+   <!--显示效果如下图片-->
+```
+
+![image-20210619164006430](https://xiaodingyang-1300707163.cos.ap-chengdu.myqcloud.com/Markdown/image-20210619164006430.png)
+
+##### `<figure>`、`<figcaption>`标签
+
+`<figure>`元素代表一段独立的内容，与说明`<figcaption>`配合使用，他是一个独立的引用单元，比如建议读者拓展视野的图片等，当这部分转移到附录中或者其他页面时不会影响到主题。
+
+```html
+<p>
+    北京是一个美丽的城市。    北京是一个美丽的城市。    北京是一个美丽的城市。 北京是一个美丽的城市。    北京是一个美丽的城市。    北京是一个美丽的城市。
+</p>
+    <figure>
+        <img src="图片地址" alt=“”>
+        <figcaotion>北京鸟巢</figcaotion>    
+    </figure>
+  <figure>
+        <img src="图片地址" alt=“”>
+        <figcaotion>颐和园十七孔桥</figcaotion>    
+    </figure>
+</p>
+<!--此网页效果如下图-->
+```
+
+![image-20210619165429471](https://xiaodingyang-1300707163.cos.ap-chengdu.myqcloud.com/Markdown/image-20210619165429471.png)
 
 
-音频和视频
 
-### 1音频和视频
 
-1大纲标签
-2语义化标签
+
+
 
 
 
