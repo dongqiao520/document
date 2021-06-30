@@ -8,15 +8,20 @@
 </head>
 <body>
     <!-- 页面头部 -->
-    <div class= "header">
+    <header>
         <!-- 页面logo -->
         <div class="iogo"> 
             <h1>小穆医生</h1>
         </div>
         <!-- 网页的功能区 -->
-        <div class="tool"></div>
-        <!-- 网页的导航条 -->
-        <div class="nav">
+        <div class="tool">
+            <img src="images/电话.png" alt="">
+            <samp class="telnumber">088-88888888</samp>
+            <a href=""><img src="images/中文.png" alt=""> </a>
+            <a href=""><img src="images/英文.png" alt=""> </a>
+        </div>
+        <!-- 网页的主航条（加类名是为了区分可能出现的其他导航条） -->
+        <nav class="main nav"> 
             <ul>
                 <li>首页</li>
                 <li>医院概况</li>
@@ -27,10 +32,12 @@
                 <li>信息公开</li>
                 <li>互动交流</li>
             </ul>
-        </div>
-    </div>   
+        </nav>
+    </header>  
        <!-- 网页的bananer -->
-    <div class=bananer>
+    <section class=bananer>
+        <img src="images/banner.png" alt=""width="1940"height="460">
+        <h2>责任，科学，严谨</h2>
         <!-- 小圆点 -->
         <ol>
             <li></li>
@@ -38,25 +45,50 @@
             <li></li>
             <li></li>
         </ol>
-    </div>   
+    </section>   
      <!-- 网页的主要内容 -->
-    <div class=content>
+    <section class=content>
     <!-- 常用链接 -->
          <div class="useful-links">
              <ul>
-                 <li>就诊需知</li>
-                 <li>就医流程</li>
-                 <li>专家介绍</li>
-                 <li>科室介绍</li>
-                 <li>医保就医</li>
-                 <li>健康体检</li>
-             </ul>
+                 <li> 
+                     <a href="">
+                         <img src="images/就诊需知.png" alt=""width="120"> <span>就诊需知</span>
+                      </a>
+                </li>
+             
+       
+                 <li>
+                     <a href="">
+                         <img src="images/就医流程.png" alt=""width="120"> <span>就医流程</span>
+                     </a>
+                </li>
+                 <li>
+                     <a href="">
+                         <img src="images/3专家介绍.png" alt=""width="120"> <span>专家介绍</span>
+                     </a>
+                </li>
+                 <li>
+                     <a href="">
+                         <img src="images/4科室介绍.png" alt=""width="120"> <span>科室介绍</span>
+                     </a>
+                </li>
+                 <li>
+                     <a href="">
+                         <img src="images/5医保就医.png" alt=""width="120"> <span>医保就医</span>
+                     </a>
+                </li>
+                 <li>
+                     <a href="">
+                         <img src="images/6健康体检.png" alt=""width="120"> <span>健康体检</span>
+                     </a>
+                </li>
          </div>
          <!-- 医院的动态和医院的公告区域 -->
          <div class="news-and-notice">
              <!-- 医院的动态 -->
              <div class=news>
-                 <h2>医院的动态</h2>
+                 <h3>医院的动态</h3>
                  <div class="news-content">
                      <!-- 图片新闻 -->
                      <div class="hot-news">
@@ -82,7 +114,7 @@
             </div >
             <!-- 医院的公告 -->
              <div class="notice">
-                 <h2>医院的公告</h2>
+                 <h3>医院的公告</h3>
                  <ol>
                      <li>
                          <dl>
@@ -123,10 +155,10 @@
         <div=class"dep-images"></div>
         <!-- 科室介绍 -->
         <div class="dep-info">
-            <h2>科室介绍</h2>
+            <h3>科室介绍</h3>
             <div class="dep-content">
                 <div>
-                    <h3>内科</h3>
+                    <h4>内科</h4>
                     <ul>
                         <li>呼吸内科</li>
                         <li>消化内科</li>
@@ -139,7 +171,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h3>肿瘤科</h3>
+                    <h4>肿瘤科</h4>
                     <ul>
                         <li>肿瘤内科</li>
                         <li>肿瘤外科</li>
@@ -152,7 +184,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h3>w外科</h3>
+                    <h4>w外科</h4>
                     <ul>
                         <li>肿普通外科</li>
                         <li>神经外科</li>
@@ -167,7 +199,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h3>儿科</h3>
+                    <h4>儿科</h4>
                     <ul>
                         <li>儿科综合</li>
                         <li>小儿内科</li>
@@ -182,7 +214,7 @@
         </div>
         <!-- 专家介绍 -->
         <div class="exp-info">
-            <h2>专家介绍</h2>
+            <h3>专家介绍</h3>
             <ul>
                 <li>
                     <div class="picbx"></div>
@@ -239,11 +271,12 @@
                     </div>
                 </li>
             </ul>
-        </div>
+        </section>
         <!-- 页脚 -->
         <div class="footer">
             <!-- 友情链接 -->
             <div class="feiend-links"></div>
+            <h3>友情链接</h3>
             <ul>
                 <li>院长信箱</li>
                 <li>投诉信箱</li>
@@ -255,6 +288,7 @@
             </ul>
             <!-- 小慕医生的联系方式 -->
             <div class="adderss"></div>
+            <h3>小慕医生</h3>
             <ul>
                 <li>地址：北京市</li>
                 <li>电话：123456</li>
