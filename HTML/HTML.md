@@ -561,6 +561,47 @@ HTML5退出来众多新的区块标签
 
 
 
+### 表单标签
+
+表单是什么？
+
+表单用来收集信息，比如注册，登录，发送评论，购买商品等等。
+
+所有html表单都以一个`<form>`元素开始
+
+```html
+<form action="save.php" method="post"></form>
+    <!--action属性表示表单要提交的后台程序的网址-->
+  <!--method属性表示表单提交的方式，有get和post-->
+```
+
+单行文本框
+
+使用type(类型)属性值被设置为text（文本）的`<input>`（输入）元素可以创建单行文本框，它是一个单标签
+
+```html
+<input type="text">
+<!--表示现在的输入控件的类型是一个文本框-->
+```
+
+value属性表示已经填好的值
+
+```html
+<input type="text" value"123">
+```
+
+placeholder属性表示提示文本，将以浅色文字卸载文本框中，并不是文本框中的值
+
+```html
+<input type="text" placeholder="请输入姓名">
+```
+
+disabled属性表示用户不能有元素交互，即“锁死”
+
+
+
+
+
 
 
 
